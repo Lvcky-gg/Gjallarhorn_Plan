@@ -3,7 +3,7 @@ main :: proc() {
         port = 8080,
         root = "/",
         db_type = "postgress,
-        //...db_env
+        /*...db_env */
     })
 
     app.Rune(Sample.Module{})
