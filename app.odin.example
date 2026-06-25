@@ -1,0 +1,10 @@
+main :: proc() {
+    app := Gjallarhorn.New({
+        port = 8080,
+        root = "/",
+    })
+
+    app.Rune(Sample.Module{})
+
+    app.Run()
+}

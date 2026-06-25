@@ -1,0 +1,7 @@
+package Sample
+
+// this will be used by ORM and validation api built in
+Sample :: struct {
+    id: int `primary`
+    example: string `required max:255`
+}

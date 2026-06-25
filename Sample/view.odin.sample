@@ -1,0 +1,14 @@
+package Sample
+
+import Gjallarhorn
+
+Module :: struct {}
+
+Register :: proc(m: Module, app: ^Gjallarhorn.App) {
+    app.Get("/sample/:id", Controller.Get)
+    app.Post("/sample", Controller.Create)
+    app.Delete("/sample/:id", Controller.Delete)
+
+    // introduce a pragmatic method called show
+    app.Show("/", Static("./path/to/template"))
+}

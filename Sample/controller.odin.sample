@@ -1,0 +1,14 @@
+package Sample
+
+Get :: proc(ctx: ^Gjallarhorn.Context) {
+    id := ctx.ParamInt("id")
+
+    sample, ok := ORM.Find(Model.Sample, id)
+
+    if !ok {
+        ctx.NotFound()
+        return
+    }
+
+    ctx.JSON(200, sample)
+}
