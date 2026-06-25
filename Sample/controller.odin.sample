@@ -3,7 +3,7 @@ package SampleController
 Get :: proc(ctx: ^Gjallarhorn.Context) {
     id := ctx.ParamInt("id")
 
-    sample, ok := ORM.Find(Model.Sample, id)
+    sample, ok := Gjallarhorn.Find(Model.Sample, id)
 
     if !ok {
         ctx.NotFound()
