@@ -6,5 +6,7 @@ main :: proc() {
 
     app.Rune(Sample.Module{})
 
+    // random things like
+    // app.Rune(cors), etc...
     app.Run()
 }

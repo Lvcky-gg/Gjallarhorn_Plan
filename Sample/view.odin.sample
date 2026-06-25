@@ -7,6 +7,7 @@ Module :: struct {}
 
 Register :: proc(m: Module, app: ^Gjallarhorn.App) {
     app.Get("/sample/:id", SampleController.Get)
+        //.Guard(Auth)
     app.Post("/sample", SampleController.Create)
     app.Delete("/sample/:id", SampleController.Delete)
 
