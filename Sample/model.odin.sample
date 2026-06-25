@@ -1,4 +1,4 @@
-package Sample
+package SampleModel
 
 // this will be used by ORM and validation api built in
 Sample :: struct {

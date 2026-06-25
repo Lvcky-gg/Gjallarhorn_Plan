@@ -1,4 +1,4 @@
-package Sample
+package SampleController
 
 Get :: proc(ctx: ^Gjallarhorn.Context) {
     id := ctx.ParamInt("id")
@@ -12,3 +12,4 @@ Get :: proc(ctx: ^Gjallarhorn.Context) {
 
     ctx.JSON(200, sample)
 }
+// more methods
